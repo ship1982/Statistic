@@ -1,0 +1,1 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html><head><title>404 Not Found</title></head><body style="background: #fff url(/bundles/img/404.jpg) no-repeat 50% 50%;width:100%;height:100%;overflow:hidden;margin:0"><a style="position:absolute;left:50%;top:50%;margin:-265px -345px 0;height:530px;width:690px" href="/"></a></body></html>

@@ -1,0 +1,8 @@
+{
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "bshaffer/oauth2-server-php": "^1.9",
+        "browscap/browscap-php": "^3.1",
+        "smi2/phpclickhouse": "0.17.12.1"
+    }
+}

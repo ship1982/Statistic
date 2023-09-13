@@ -1,0 +1,14 @@
+__mstatContext.url{{bannerId}} = '{{url}}';
+__mstatContext.createDivWithBanner{{id}} = function () {
+"use strict";
+if(!__mstatContext.scriptId[{{id}}]) {return false;}
+var div = document.createElement('div');
+div.id = 'ads_' + Math.round((new Date).getTime() / 1E3);
+var parent = document.getElementById(__mstatContext.scriptId[{{id}}]).parentNode;
+div.innerHTML = '{{html}}';
+parent.insertBefore(div, null);
+};
+function mstatsee() {
+  "use strict";
+  mstat('show', {'{{bannerId}}': ['{{url}}','ad','show',__mstatContext.url{{bannerId}}]});
+}

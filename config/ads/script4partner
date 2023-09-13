@@ -1,0 +1,17 @@
+<script id="{{scriptId}}">
+  (function (d,b,c,o) {
+    b[c] = b[c] || function () {
+      (b[c].queue = b[c].queue || []).push(arguments);
+    };
+    b[c].p = b[c].p || 1;
+    if(1 === b[c].p) {
+      var a = d.createElement("script");
+      a.src = o;
+      a.async = 1;
+      var m = d.getElementsByTagName('script')[0];
+      m.parentNode.insertBefore(a, m);
+    }
+    b[c].p++;
+  })(document, window, 'mstatContext', '//stat.mgts.zionec.ru/plugin/context.js');
+  mstatContext({{partnerId}}, {{adId}}, '{{scriptId}}');
+</script>

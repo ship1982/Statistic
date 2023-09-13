@@ -1,0 +1,15 @@
+__mstatContext.url{{id}} = '{{url}}';
+__mstatContext.src{{id}} = '{{pic}}';
+__mstatContext.createDivWithBanner{{id}} = function () {
+"use strict";
+if(!__mstatContext.scriptId[{{id}}]) {return false;}
+var div = document.createElement('div');
+div.id = 'ads_' + Math.round((new Date).getTime() / 1E3);
+var parent = document.getElementById(__mstatContext.scriptId[{{id}}]).parentNode;
+div.innerHTML = '<a href="' + __mstatContext.url{{id}} + '"><img onload="mstatsee();" width="200" src="' + __mstatContext.src{{id}} + '" /></a>';
+parent.insertBefore(div, null);
+};
+function mstatsee() {
+  "use strict";
+  mstat('show', {'#{{url}}': ['{{url}}','ad','show',__mstatContext.url{{id}}]});
+}
